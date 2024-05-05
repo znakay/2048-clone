@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;

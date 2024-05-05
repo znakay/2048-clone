@@ -1,0 +1,49 @@
+.field {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    position: relative;
+    width: 768px;
+
+    @media (max-width: 768px) {
+      width: 375px;
+    }
+  }
+
+  &__grid {
+    &-container {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 15px;
+      padding: 15px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #bbada0;
+      border-radius: 8px;
+    }
+
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 15px;
+    }
+
+    &-tile {
+      width: 100%;
+      height: 100%;
+      background-color: #cdc1b4;
+      border-radius: 4px;
+    }
+  }
+
+  &__tiles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+}
